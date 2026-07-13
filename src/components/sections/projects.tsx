@@ -76,7 +76,7 @@ const projectsData = [
       "Clean UI component structure"
     ],
     github: "https://github.com/whosatyamraj/Calculator-React",
-    live: "#",
+    live: "https://calculator-react-theta-jade.vercel.app/",
     image:"/images/calculator.png",
     imageFallback: "bg-gradient-to-br from-accent/20 to-primary/20",
     number: "05",
