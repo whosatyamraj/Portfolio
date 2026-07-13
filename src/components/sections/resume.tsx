@@ -30,7 +30,7 @@ export function Resume() {
             </p>
             
             <a 
-              href="YOUR_GOOGLE_DRIVE_LINK_HERE" 
+              href="https://drive.google.com/file/d/10Ht7isOcK2w_2Z-M73Dmo4G1oCXcYftf/view?usp=sharing" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-primary text-primary-foreground font-bold px-8 py-4 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(173,110,84,0.4)] group/btn relative overflow-hidden"
