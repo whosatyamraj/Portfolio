@@ -9,6 +9,21 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 const projectsData = [
   {
+    title: "ZeroWaste OS",
+    description: "An AI-powered SaaS platform that helps restaurants, cloud kitchens, supermarkets, and food businesses reduce food waste through demand forecasting, inventory optimization, expiry tracking, and real-time analytics.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL", "Python", "FastAPI", "TensorFlow", "YOLOv8", "Docker"],
+    features: [
+      "AI-powered demand forecasting & smart inventory management",
+      "Computer vision-based food quality detection",
+      "Real-time analytics dashboard & sustainability insights"
+    ],
+    github: "#", // Add your Github link here
+    live: "#",
+    imageFallback: "bg-gradient-to-br from-emerald-500/20 to-teal-500/20",
+    number: "01",
+    inProgress: true,
+  },
+  {
     title: "CodeSync",
     description: "A production-ready collaborative real-time code editor. Perfect for pair programming, code interviews, and team collaboration.",
     tags: ["React", "Node.js", "Socket.IO", "Yjs", "Monaco Editor"],
@@ -20,7 +35,7 @@ const projectsData = [
     github: "https://github.com/whosatyamraj/codesync",
     live: "https://docker-aws-frontend-f40y1crgv-satyam-raj-singhs-projects.vercel.app/",
     image:"/images/codesync.png",
-    number: "01",
+    number: "02",
   },
   {
     title: "Kisan Setu",
@@ -35,7 +50,7 @@ const projectsData = [
     live: "https://kisan-setu-gules.vercel.app/",
     image: "/images/kisan-setu.png",
     imageFallback: "bg-gradient-to-br from-primary/20 to-accent/20",
-    number: "02",
+    number: "03",
   },
   {
     title: "Myntra Clone",
@@ -49,7 +64,7 @@ const projectsData = [
     github: "#",
     live: "#",
     imageFallback: "bg-gradient-to-br from-secondary/20 to-accent/20",
-    number: "03",
+    number: "04",
   },
   {
     title: "Calculator",
@@ -64,7 +79,7 @@ const projectsData = [
     live: "#",
     image:"/images/calculator.png",
     imageFallback: "bg-gradient-to-br from-accent/20 to-primary/20",
-    number: "04",
+    number: "05",
   }
 ];
 
@@ -128,9 +143,17 @@ export function Projects() {
                   <span className="text-6xl font-bold text-primary/20 font-sans tracking-tighter">
                     {project.number}
                   </span>
-                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground">
-                    {project.title}
-                  </h3>
+                  <div className="flex flex-col">
+                    <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground">
+                      {project.title}
+                    </h3>
+                    {project.inProgress && (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 mt-2 rounded-full bg-amber-500/10 text-amber-500 text-xs font-bold uppercase tracking-wider w-fit border border-amber-500/20">
+                        <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
+                        Work in Progress
+                      </span>
+                    )}
+                  </div>
                 </div>
                 
                 <p className="text-lg text-muted-foreground leading-relaxed font-medium">
@@ -158,16 +181,26 @@ export function Projects() {
                 
                 {/* Actions */}
                 <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                  <a 
-                    href={project.live} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className={cn(buttonVariants({ size: "lg" }), "rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-[0_4px_20px_rgba(173,110,84,0.3)] hover:-translate-y-1 group")}
-                  >
-                    <Rocket className="mr-2 h-4 w-4" />
-                    Live Preview
-                    <ExternalLink className="ml-2 h-4 w-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                  </a>
+                  {project.live !== "#" ? (
+                    <a 
+                      href={project.live} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className={cn(buttonVariants({ size: "lg" }), "rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-[0_4px_20px_rgba(173,110,84,0.3)] hover:-translate-y-1 group")}
+                    >
+                      <Rocket className="mr-2 h-4 w-4" />
+                      Live Preview
+                      <ExternalLink className="ml-2 h-4 w-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+                    </a>
+                  ) : (
+                    <button 
+                      disabled
+                      className={cn(buttonVariants({ size: "lg" }), "rounded-full bg-white/5 text-muted-foreground cursor-not-allowed border-none")}
+                    >
+                      <Rocket className="mr-2 h-4 w-4 opacity-50" />
+                      Coming Soon
+                    </button>
+                  )}
                   
                   <a 
                     href={project.github} 
