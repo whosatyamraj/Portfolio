@@ -6,20 +6,27 @@ import { ArrowUpRight, Code2, Terminal, Zap, Fingerprint } from "lucide-react";
 import { useMemo } from "react";
 import { SectionHeading } from "@/components/ui/section-heading";
 
-// Generate highly active dummy contribution data for the "impressive" graph
+const hash = (x: number) => {
+  const val = Math.sin(x) * 10000;
+  return val - Math.floor(val);
+};
+
+// Generate highly active dummy contribution data for the "impressive" graph deterministically
 const generateActiveContributions = () => {
   const weeks = [];
   for (let w = 0; w < 52; w++) {
     const days = [];
     for (let d = 0; d < 7; d++) {
+      const rand1 = hash(w * 100 + d);
+      const rand2 = hash(w * 100 + d + 1000);
+      
       // 85% chance to have some activity, mostly levels 2, 3, 4
-      const isActivity = Math.random() > 0.15;
+      const isActivity = rand1 > 0.15;
       let level = 0;
       if (isActivity) {
-        const rand = Math.random();
-        if (rand > 0.8) level = 4;
-        else if (rand > 0.4) level = 3;
-        else if (rand > 0.1) level = 2;
+        if (rand2 > 0.8) level = 4;
+        else if (rand2 > 0.4) level = 3;
+        else if (rand2 > 0.1) level = 2;
         else level = 1;
       }
       days.push(level);
