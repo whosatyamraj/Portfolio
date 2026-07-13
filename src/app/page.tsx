@@ -6,6 +6,7 @@ import { Skills } from "@/components/sections/skills";
 import { GithubSection } from "@/components/sections/github";
 import { Projects } from "@/components/sections/projects";
 import { Experience } from "@/components/sections/experience";
+import { Resume } from "@/components/sections/resume";
 import { Contact } from "@/components/sections/contact";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <GithubSection />
         <Projects />
         <Experience />
+        <Resume />
         <Contact />
       </main>
       <Footer />
