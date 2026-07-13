@@ -19,6 +19,7 @@ const projectsData = [
     ],
     github: "#", // Add your Github link here
     live: "#",
+    image:"/images/zero-waste-os.png",
     imageFallback: "bg-gradient-to-br from-emerald-500/20 to-teal-500/20",
     number: "01",
     inProgress: true,
@@ -61,8 +62,9 @@ const projectsData = [
       "Normalized data pipelines reducing redundant API calls by 30%",
       "Created 8+ reusable UI components with separation of data ingestion and presentation"
     ],
-    github: "#",
-    live: "#",
+    github: "https://github.com/whosatyamraj/Myntra-Clone/tree/main",
+    live: "https://myntra-clone-beige-ten.vercel.app/",
+    image:"/images/myntra.png",
     imageFallback: "bg-gradient-to-br from-secondary/20 to-accent/20",
     number: "04",
   },
