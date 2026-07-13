@@ -41,7 +41,7 @@ const projectsData = [
   {
     title: "Kisan Setu",
     description: "Built a data aggregation platform that fetches and normalizes real-time crop, weather, and market data from multiple external REST APIs into a unified React frontend.",
-    tags: ["React", "JavaScript", "REST APIs", "Tailwind CSS"],
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "REST APIs", "Tailwind CSS"],
     features: [
       "Simulated ERP/CRM data ingestion workflows",
       "Implemented 10+ modular React components with clean API contracts",
