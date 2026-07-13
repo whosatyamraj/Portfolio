@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Satyam Raj Singh - Developer Portfolio
 
-## Getting Started
+Welcome to the source code of my personal developer portfolio! This project showcases my skills, experience, and projects as a Software Developer, AI Enthusiast, and Entrepreneur.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Modern Tech Stack**: Built with Next.js, React 19, and Tailwind CSS.
+- **Interactive 3D Elements**: Uses Three.js and React Three Fiber for stunning 3D visual effects.
+- **Smooth Animations**: Powered by Framer Motion and Lenis for fluid scrolling and micro-interactions.
+- **Beautiful UI Components**: Styled using `shadcn/ui` and custom glassmorphism effects.
+- **Fully Responsive**: Designed to look great on desktop, tablet, and mobile devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Library**: [React](https://react.dev/) 19
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) v4
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **3D Graphics**: [Three.js](https://threejs.org/) & [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/) & [Radix UI](https://www.radix-ui.com/)
+- **Icons**: [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+To run this project locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Make sure you have Node.js and npm (or pnpm/yarn/bun) installed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/whosatyamraj/Portfolio.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navigate to the project directory:
+   ```bash
+   cd Portfolio
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see the portfolio in action.
+
+## 🤝 Contributing
+
+This is a personal portfolio, but feedback, suggestions, and bug reports are always welcome! Feel free to open an issue or submit a pull request if you spot anything that could be improved.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE). Feel free to use the code as inspiration for your own portfolio!
+
+---
+
+*Designed and developed by [Satyam Raj Singh](https://github.com/whosatyamraj)*
